@@ -14,10 +14,8 @@ class MyWidget extends StatelessWidget {
               itemBuilder: (ctx, index) {
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundImage: NetworkImage(
-                        'https://cdn2.iconfinder.com/data/icons/mixed-communication-and-ui-pack/48/general_pack_NEW__user-512.png'),
-                    radius: 30,
-                  ),
+                      backgroundImage:
+                          AssetImage('assets/images/appstore.png')),
                   title: Text('PERSON $index'),
                   subtitle: Text('MESSAGE $index'),
                   trailing: Text('1$index:00PM'),
